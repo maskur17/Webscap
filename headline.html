@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Membaca file text</title>
+	<script scr="https://code.jquery.com/jquery-3.5.1.js"></script>
+	<!-- kode java scrip -->
+	<script type="text/javascrip">
+		$(function(){
+		$.get("headline.txt",function(ojb){
+		var headline=obj.split("\n");
+		var str="";
+		for (var i=0;i< headline.length;i++){
+		str+=headline[i]+"</br>";
+	}
+		$("headline.text").html(str);
+	});
+	});
+</script>
+</head>
+<body>
+	<h1>Headline Republika Online</h1>
+	<div id="headline_teks"></div>
+</body>
+</html>
